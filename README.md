@@ -1,41 +1,56 @@
-The project that uses AI to generate forms.
+# 🧠 AI Form Builder
 
-<img width="1399" alt="Screenshot 2024-01-22 at 3 34 26 PM" src="https://github.com/judygab/ai-form-builder-tutorial/assets/50160672/443a69ed-e441-412a-a84e-ea820022c6dc">
+An AI-powered form generation platform that lets users effortlessly create, publish, and manage forms using natural language prompts.
 
-## Tech Stack 
+![AI Form Builder Screenshot](./public/screenshot.png) <!-- Replace with actual path -->
 
-- Next-auth - authentication
-- Shadcn ui - ui library
-- Open Al - AI Integration
-- Drizzle - Orm
-- PostgreSQL - database
-- Stripe - payments
-- Tanstack - Table
-- Typescript - Type Checking
-- Plausible - Analytics
-- Vercel - Deployment
-- Stripe - Payments
-- Zod - Schema Validation
+## 🛠️ Tech Stack
 
+- **Framework**: [Next.js](https://nextjs.org/) with App Router
+- **UI Components**: [ShadCN UI](https://ui.shadcn.com/)
+- **Authentication**: [NextAuth.js](https://next-auth.js.org/)
+- **AI Integration**: [OpenAI API](https://openai.com/)
+- **ORM**: [Drizzle ORM](https://orm.drizzle.team/)
+- **Database**: PostgreSQL
+- **Payments**: [Stripe](https://stripe.com/)
+- **Data Tables**: [TanStack Table](https://tanstack.com/table)
+- **Schema Validation**: [Zod](https://zod.dev/)
+- **Type Checking**: TypeScript
+- **Analytics**: [Plausible Analytics](https://plausible.io/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-## Features
+## ✨ Features
 
-- Authentication ✅
-- AI Form Generation ✅
-- Form Publish and Submissions ✅
-- View your forms ✅
-- Admin Panel ✅
-- View Results ✅
-- Settings & Upgrade Subscription ✅
-- Analytics  ✅
-- Landing page ✅
-- Edit forms ❌ (open to pull requests)
+- ✅ **Authentication**
+- ✅ **AI Form Generation**
+- ✅ **Form Publishing & Submissions**
+- ✅ **View & Manage Your Forms**
+- ✅ **Admin Panel**
+- ✅ **View Form Results**
+- ✅ **User Settings & Subscription Upgrades**
+- ✅ **Built-in Analytics**
+- ✅ **Landing Page**
+- ❌ **Form Editing** (Coming soon — PRs welcome!)
 
-## Getting Started
+## 🚀 Getting Started
 
-First, run the development server:
+Clone the repo and install dependencies:
 
 ```bash
+git clone https://github.com/yourusername/ai-form-builder.git](https://github.com/mahanyasbaira/AI-Form-Builder.git
+cd ai-form-builder
+
+# Install dependencies
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+
+
+Start the development server:
 npm run dev
 # or
 yarn dev
@@ -43,28 +58,54 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open http://localhost:3000 in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+🧪 Environment Variables
 
-## Environment Variables
+Create a .env file in the root directory and add the following variables:
+# OpenAI API
+OPENAI_API_KEY="your-openai-key"
 
-Create a new .env file and add your keys in the following manner:
-```
-OPENAI_API_KEY=""
-GOOGLE_CLIENT_ID=""
-GOOGLE_CLIENT_SECRET=""
-AUTH_SECRET=""
-DATABASE_URL=""
-NEXT_PUBLIC_PUBLISHABLE_KEY=""
-STRIPE_SECRET_KEY=""
-STRIPE_WEBHOOK_SECRET=""
-STRIPE_WEBHOOK_LOCAL_SERCRET=""
-PLAUSIBLE_DOMAIN=""
-```
+# Google Auth (NextAuth)
+GOOGLE_CLIENT_ID="your-google-client-id"
+GOOGLE_CLIENT_SECRET="your-google-client-secret"
 
+# Auth secret (NextAuth)
+AUTH_SECRET="your-secret"
+
+# PostgreSQL database
+DATABASE_URL="postgresql://user:password@host:port/dbname"
+
+# Stripe
+NEXT_PUBLIC_PUBLISHABLE_KEY="your-stripe-pk"
+STRIPE_SECRET_KEY="your-stripe-sk"
+STRIPE_WEBHOOK_SECRET="your-stripe-webhook-secret"
+STRIPE_WEBHOOK_LOCAL_SERCRET="your-stripe-local-webhook-secret"
+
+# Analytics
+PLAUSIBLE_DOMAIN="yourdomain.com"
+
+⚠️ Never commit your .env file or any credentials to version control.
+
+📁 Important Paths
+	•	app/page.tsx – Home / Landing Page
+	•	app/api/ – API Routes (including OpenAI integration)
+	•	app/dashboard/ – Authenticated user dashboard
+	•	lib/ – Helper functions, OpenAI client, DB
+	•	components/ – Reusable UI elements
+
+🌐 Deployment
+
+This project is ready to deploy on Vercel. Simply connect the repo and add your .env variables in the Vercel dashboard.
+
+🤝 Contributing
+
+Contributions are welcome! Especially for:
+	•	🛠 Form Editing support
+	•	🎨 UI/UX improvements
+	•	🧪 Test coverage
+
+Fork the repo → Create a new branch → Submit a pull request.
 
