@@ -2,7 +2,7 @@
 
 An AI-powered form generation platform that lets users effortlessly create, publish, and manage forms using natural language prompts.
 
-![AI Form Builder Screenshot](./public/screenshot.png) <!-- Replace with actual path -->
+ <!-- Replace with actual path -->
 
 ## 🛠️ Tech Stack
 
